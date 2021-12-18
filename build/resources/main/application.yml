@@ -1,7 +1,21 @@
 micronaut:
   application:
     name: agenda
-
+  server:
+    port: 8080
+    cors:
+      enabled: true
+      configurations:
+        web:
+          allowedMethods:
+            - POST
+            - GET
+  router:
+    static-resources:
+      default:
+        mapping: "/**"
+        paths:
+          - classpath:static
 environment: Dev
 
 datasources:

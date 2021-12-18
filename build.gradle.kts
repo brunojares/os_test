@@ -19,7 +19,6 @@ val foundationMicronautVersion: String by project
 val kotlinVersion: String by project
 
 dependencies {
-
     kapt(platform("io.micronaut:micronaut-bom:$micronautVersion"))
     kapt("io.micronaut:micronaut-inject-java")
 
@@ -32,7 +31,6 @@ dependencies {
     runtimeOnly("com.h2database:h2")
     //tests
     kaptTest("io.micronaut:micronaut-inject-java")
-
 }
 
 repositories {

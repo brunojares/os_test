@@ -11,11 +11,12 @@ class PersonController(
     private val personService: PersonService
 ) {
     @Get("/")
-    fun get(): List<Person>{
-        return  personService.findAll()
+    fun get(): List<Person> {
+        return personService.findAll()
     }
+
     @Post
-    fun post(person: Person):Person{
-        return  personService.save(person);
+    fun post(person: Person): Person {
+        return personService.save(person);
     }
 }
