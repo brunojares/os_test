@@ -1,0 +1,10 @@
+{
+    "global": {
+        "app_name": "agenda",
+        "group_id": "teste.orangestack"
+    },
+    "last": {
+        "app_name": "agenda",
+        "group_id": "teste.orangestack"
+    }
+}
